@@ -1,0 +1,10 @@
+CREATE TABLE Persons1 (
+    PersonID number,
+    LastName varchar(25),
+    FirstName varchar(25),
+    Address varchar(25),
+    City varchar(25)
+);
+insert into persons(PersonID,Lastname,Firstname,Address,city)
+Values(1,'Gubrele','Satyam','shivaji nagar','jhansi');
+describe Persons1
