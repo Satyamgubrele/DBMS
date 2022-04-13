@@ -1,0 +1,11 @@
+create table Emp(
+Empid NUMBER(3),
+NAME VARCHAR2(20)
+);
+INSERT INTO Emp VALUES(4,'Satyam');
+
+SELECT *FROM Emp;
+SELECT *from Emp where name LIKE 'A%';
+SELECT *FROM Emp;
+SELECT *from Emp where name LIKE 'S%';
+
