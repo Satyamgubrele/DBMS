@@ -1,0 +1,33 @@
+begin
+dbms_output.put_line('hello');
+end;
+
+declare 
+v_salary number (7,2):=0;
+v_name varchar(25):='Robin';
+BEGIN
+dbms_output.put_line(v_salary);
+dbms_output.put_line(v_name);
+end;
+DECLARE
+std student%rowtype;
+begin 
+select * from std;
+where roll:=10;
+dbms_output.put_line(std.roll);
+end;
+
+declare grade char(1):='A';
+BEGIN
+case Grade
+when 'A' then dbms_output.put_line('good morning');
+when 'B' then dbms_output.put_line('good afternoon');
+when 'C' then dbms_output.put_line('good eve');
+else dbms_output.put_line('invaild');
+end case;
+end;
+declare num number(3):=10;
+begin
+if(num<11) then dbms_output.put_line('helloooo');
+end if;
+end;
